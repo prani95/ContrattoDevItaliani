@@ -718,7 +718,7 @@ contract PraniToken is Context, IERC20, Ownable {
     uint256 private _tBurnTotal;
     uint256 public _maxTxAmount = 20000000000000 * 10**1 * 10**9;
     uint256 private numTokensSellToAddToLiquidity = 3000000000000 * 10**1 * 10**9;
-    address private _marketingWallet = 0x5A4A464c40c2D35334E253Cd99AD4E78BF4a69A3;
+    address private _marketingWallet;
     uint256 private constant _MARKETING_FEE = 200;
     event MinTokensBeforeSwapUpdated(uint256 minTokensBeforeSwap);
     event SwapAndLiquifyEnabledUpdated(bool enabled);
